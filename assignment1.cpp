@@ -76,6 +76,29 @@ double net_pay_usd = gross_pay * decimal_tax_witholding_usd
 
 
 D. LOGIC and ALGORITHMS
+MESSAGE "Welcome to my Weekly Payroll program!!"
+
+PROMPT
+INPUT
+
+PROMPT
+INPUT
+
+PROMPT
+INPUT
+
+PROMPT
+INPUT
+
+MESSAGE "Your Payroll Summary:"
+
+LABEL ""
+DATA
+
+
+
+
+
 Design the logic of your program using pseudocode or flowcharts. 
 Use conditionals, loops, functions or array constructs.
 List the steps in transforming inputs into outputs. 

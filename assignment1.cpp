@@ -64,12 +64,16 @@ int federal_withholding_percent = 0;
 
 
 B. OUTPUT
-Define the output variables including data types. 
+int gross_pay = 0
+double federal_tax_witholding_usd = 0.0;
+double net_pay_usd = 0.0;
 
 C. CALCULATIONS
-Describe calculations used by algorithms in step D.  
-List all formulas. 
-If there are no calculations needed, state there are no calculations.
+gross_pay = hours_worked * usd_per_hour
+double decimal_tax_witholding_usd = federal_withholding_percent/100
+double net_pay_usd = gross_pay * decimal_tax_witholding_usd
+
+
 
 D. LOGIC and ALGORITHMS
 Design the logic of your program using pseudocode or flowcharts. 

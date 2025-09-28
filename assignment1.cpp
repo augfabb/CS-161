@@ -36,10 +36,23 @@
 using namespace std;
 // Main function
 int main(int argc, char* argv[]) {
+  
   int employee_id = 0;
   int hours_worked = 0;
   int usd_per_hour = 0;
   int federal_withholding_percent = 0;
+
+  int gross_pay = 0;
+  double federal_tax_witholding_usd = 0.0;
+  double net_pay_usd = 0.0;
+
+  gross_pay = hours_worked * usd_per_hour;
+  double decimal_tax_witholding_usd = federal_withholding_percent/100;
+  double net_pay_usd = gross_pay * decimal_tax_witholding_usd;
+
+  
+
+
 
 
   
@@ -64,7 +77,6 @@ int employee_id = 0;
 int hours_worked = 0;
 int usd_per_hour = 0;
 int federal_withholding_percent = 0;
-
 
 B. OUTPUT
 int gross_pay = 0
@@ -95,8 +107,17 @@ INPUT    federal_withholding_percent
 
 MESSAGE "Your Payroll Summary:"
 
-LABEL ""
-DATA
+CALCULATIONS DONE HERE
+
+LABEL "Total Gross Pay: $"
+DATA   gross_pay
+
+LABEL "Federal Tax Withholding: $"
+DATA   federal_tax_witholding_usd
+
+LABEL "Net Pay: $"
+DATA   net_pay_usd
+
 
 
 

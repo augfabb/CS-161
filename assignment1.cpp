@@ -33,16 +33,19 @@
 
 // ------------- CODE -------------
 #include <iostream>
-
 using namespace std;
-
-// Function prototypes (if any)
-
-
 // Main function
-// https://en.cppreference.com/w/cpp/language/main_function.html
 int main(int argc, char* argv[]) {
-  cout << "Hello, World!" << endl;
+  int employee_id = 0;
+  int hours_worked = 0;
+  int usd_per_hour = 0;
+  int federal_withholding_percent = 0;
+
+
+  
+  
+  
+  
   return 0;
 }
 
@@ -78,17 +81,17 @@ double net_pay_usd = gross_pay * decimal_tax_witholding_usd
 D. LOGIC and ALGORITHMS
 MESSAGE "Welcome to my Weekly Payroll program!!"
 
-PROMPT
-INPUT
+PROMPT "Enter your employee ID number (numbers only):"
+INPUT   int employee_id
 
-PROMPT
-INPUT
+PROMPT "Enter number of hours worked (whole numbers):"
+INPUT   int hours_worked
 
-PROMPT
-INPUT
+PROMPT "Enter the hourly rate:"
+INPUT    int usd_per_hour
 
-PROMPT
-INPUT
+PROMPT "Enter the federal withholding rate"
+INPUT    federal_withholding_percent
 
 MESSAGE "Your Payroll Summary:"
 
@@ -96,13 +99,6 @@ LABEL ""
 DATA
 
 
-
-
-
-Design the logic of your program using pseudocode or flowcharts. 
-Use conditionals, loops, functions or array constructs.
-List the steps in transforming inputs into outputs. 
-https://github.com/Glen-Sasek-PCC-Instructor/2025-06-22/blob/main/Pseudocode-Reference.txt
 
 
 SAMPLE RUNS
